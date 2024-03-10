@@ -4,7 +4,7 @@ Website analyzer using Go 1.21
 
 ## Description
 
-Website analyzer using Go 1.21 to analyze few basic information of a given site lite the HTML version,Title,
+Website analyzer using Go 1.21 and colly library (`github.com/gocolly/colly`) to analyze few basic information of a given site lite the HTML version,Title,
 Is the web page given by the target URL a login page, how many internal and external links does it have etc.
 However this Project currently support only for parsing and analyzing HTML only. Links calling through javascript onclick event etc are not yet supported by this project.
 This project can be used as a base project to implement extensive functionality.
