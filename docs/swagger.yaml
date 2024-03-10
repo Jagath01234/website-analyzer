@@ -1,0 +1,122 @@
+definitions:
+  entity.AppError:
+    properties:
+      code:
+        type: string
+      message:
+        type: string
+    type: object
+  entity.HeadingInfo:
+    properties:
+      count:
+        type: integer
+      level:
+        type: string
+    type: object
+  entity.LinkInfo:
+    properties:
+      external_links:
+        type: integer
+      inaccessible_links:
+        type: integer
+      internal_links:
+        type: integer
+    type: object
+  entity.Status:
+    enum:
+    - 0
+    - 1
+    - 2
+    type: integer
+    x-enum-varnames:
+    - StatusPending
+    - StatusSuccess
+    - StatusFail
+  response.AnalysisResponseBody:
+    properties:
+      Id:
+        type: string
+      error:
+        $ref: '#/definitions/entity.AppError'
+      headings:
+        items:
+          $ref: '#/definitions/entity.HeadingInfo'
+        type: array
+      html_version:
+        type: string
+      is_login:
+        type: boolean
+      job_status:
+        $ref: '#/definitions/entity.Status'
+      links:
+        $ref: '#/definitions/entity.LinkInfo'
+      target_url:
+        type: string
+      title:
+        type: string
+    type: object
+  response.AnalyzeStatusResponse:
+    properties:
+      data:
+        $ref: '#/definitions/response.AnalysisResponseBody'
+    type: object
+  response.AnalyzerResponse:
+    properties:
+      job_id:
+        type: string
+    type: object
+  response.ErrorResponse:
+    properties:
+      data:
+        $ref: '#/definitions/entity.AppError'
+    type: object
+info:
+  contact: {}
+paths:
+  /analyze/basic:
+    post:
+      description: Push a job to analyze basic information ona website
+      parameters:
+      - description: Target URL for website content analysis
+        in: query
+        name: target_url
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/response.AnalyzerResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/response.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/response.ErrorResponse'
+      summary: Analyze website content
+      tags:
+      - analyzer
+  /analyze/status:
+    get:
+      description: Analysis result of the website analysis
+      parameters:
+      - description: Job ID for analysis status
+        in: query
+        name: job_id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/response.AnalyzeStatusResponse'
+      summary: Website analysis status
+      tags:
+      - ""
+swagger: "2.0"

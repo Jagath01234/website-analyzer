@@ -1,0 +1,24 @@
+{
+  "app": {
+    "port": 8080
+  },
+  "cache": {
+    "max_size": 1000,
+    "prune_size": 50,
+    "expiry_time_secs": 600
+  },
+  "api_docs": {
+    "is_enabled": true
+  },
+  "pprof": {
+    "is_enabled": true,
+    "port": 6060
+  },
+  "metrics": {
+    "port": 7070
+  },
+  "worker": {
+    "buffer_size": 50,
+    "pool_size": 10
+  }
+}
