@@ -18,7 +18,7 @@ A frontend client supporting the APIs of this service can be found in the  https
 - [Configuration](#configuration)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Limitations](#limitations)
+- [Limitations & Possible improvements](#Limitations_&_Possible_improvements)
 - [License](#license)
 
 
@@ -29,7 +29,7 @@ A frontend client supporting the APIs of this service can be found in the  https
 
 ## Configuration
 - Edit the `config.json` file in the project root to change the configurations as required. 
-Configurations are self-explanatory.
+Configurations are self-exnoplanatory.
 ```json
 {
   "app": {
@@ -74,9 +74,10 @@ Configurations are self-explanatory.
 ![img_2.png](img_2.png)
 - Summary metrics has added to the service as a middleware.
 
-## Limitations
+## Limitations & Possible improvements
 - User validation has not been implemented and need to implement using an auth service and a auth validation middleware.
-- Only the compile time configuration is implemented for the project as of today.  
+- Only the compile time configuration is implemented for the project as of today. Better to implement some external configurations using config services like ETCD.
+- Does not support extended analysis for the javascript functionalities. 
 
 ## License
 - This project is licensed under the GNU Lesser General Public License v3.0 (LGPL-3.0).
