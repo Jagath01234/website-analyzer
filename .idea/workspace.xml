@@ -11,11 +11,13 @@
       <change afterPath="$PROJECT_DIR$/docs/swagger.yaml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_2.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/boot/boot.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/configuration/app_config.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/controller/analyzer_controller.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/analyzer_controller_impl.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/controller/analyzer_controller_test.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/entity/constant.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/entity/model.go" afterDir="false" />
@@ -27,7 +29,6 @@
       <change afterPath="$PROJECT_DIR$/src/service/analyzer_service_impl.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/service/analyzer_service_mock.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/service/analyzer_service_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/transport/http/engine/router.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/transport/http/init.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/util/util.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/util/util_test.go" afterDir="false" />
@@ -37,6 +38,7 @@
       <change afterPath="$PROJECT_DIR$/src/worker/analyzer_worker_mock.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/analyzer_controller_impl.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/analyzer_controller_impl.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +55,9 @@
   <component name="GOROOT" url="file://$PROJECT_DIR$/../go1.21.7" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="true" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />

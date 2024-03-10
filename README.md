@@ -14,11 +14,11 @@ Most parts of the business layer, gateways, utils and helpers are covered with u
 A frontend client supporting the APIs of this service can be found in the  https://github.com/Jagath01234/website-analyzer-react-client repository.
 ## Table of Contents
 
-- [Requirements](#Requirements)
-- [Configuration](#Configuration)
+- [Requirements](#requirements)
+- [Configuration](#configuration)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
+- [Limitations](#limitations)
 - [License](#license)
 
 
@@ -64,8 +64,19 @@ Configurations are self-explanatory.
 - Run with `go run main go`.
 
 ## Usage
-- There are two enpoints in this service and they are 
+- There are two endpoints in this service `/analyze/basic` and `/analyze/status`.
+- Can See the complete documentation for the endpoints using the PAI documentation once the project is up and 
+ running with the ` "api_docs": {  "is_enabled": true  },` configuration using the `<host>:<port>/doc/ui/index.html#/`
+  ![img.png](img.png)
+- pprof is added to this project for the profiling and it also can be enabled using the configs. However it's exposed only for the `localhost` due to security reasons.Can be accessed using `http://localhost:6060/debug/pprof/`
+![img_1.png](img_1.png)
+- Prometheus metrics has also been added and can be accessed using `http://<host>:<metrics_port>/metrics`
+![img_2.png](img_2.png)
+- Summary metrics has added to the service as a middleware.
 
+## Limitations
+- User validation has not been implemented and need to implement using an auth service and a auth validation middleware.
+- Only the compile time configuration is implemented for the project as of today.  
 
-  
-
+## License
+- This project is licensed under the GNU Lesser General Public License v3.0 (LGPL-3.0).
