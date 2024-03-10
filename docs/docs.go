@@ -18,7 +18,10 @@ const docTemplate = `{
     "paths": {
         "/analyze/basic": {
             "post": {
-                "description": "Push a job to analyze basic information ona website",
+                "description": "Push a job to analyze basic information on a website",
+                "consumes": [
+                    "application/x-www-form-urlencoded"
+                ],
                 "produces": [
                     "application/json"
                 ],
@@ -31,25 +34,25 @@ const docTemplate = `{
                         "type": "string",
                         "description": "Target URL for website content analysis",
                         "name": "target_url",
-                        "in": "query",
+                        "in": "formData",
                         "required": true
                     }
                 ],
                 "responses": {
                     "200": {
-                        "description": "OK",
+                        "description": "Response containing the job ID",
                         "schema": {
                             "$ref": "#/definitions/response.AnalyzerResponse"
                         }
                     },
                     "400": {
-                        "description": "Bad Request",
+                        "description": "Error response if target_url is missing",
                         "schema": {
                             "$ref": "#/definitions/response.ErrorResponse"
                         }
                     },
                     "500": {
-                        "description": "Internal Server Error",
+                        "description": "Error response for internal server error",
                         "schema": {
                             "$ref": "#/definitions/response.ErrorResponse"
                         }
@@ -92,7 +95,7 @@ const docTemplate = `{
             "type": "object",
             "properties": {
                 "code": {
-                    "type": "string"
+                    "type": "integer"
                 },
                 "message": {
                     "type": "string"

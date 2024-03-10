@@ -30,13 +30,14 @@ func NewAnalyzerController(jobCache *cache.Cache, worker worker.AnalyzerWorkerIn
 }
 
 // @Summary Analyze website content
-// @Description Push a job to analyze basic information ona website
+// @Description Push a job to analyze basic information on a website
 // @Tags analyzer
-// @Param target_url query string true "Target URL for website content analysis"
-// @Produce  json
-// @Success 200 {object} response.AnalyzerResponse  // Response containing the job ID
-// @Failure 400 {object} response.ErrorResponse  // Error response if target_url is missing
-// @Failure 500 {object} response.ErrorResponse  // Error response for internal server error
+// @Accept x-www-form-urlencoded
+// @Produce json
+// @Param target_url formData string true "Target URL for website content analysis"
+// @Success 200 {object} response.AnalyzerResponse "Response containing the job ID"
+// @Failure 400 {object} response.ErrorResponse "Error response if target_url is missing"
+// @Failure 500 {object} response.ErrorResponse "Error response for internal server error"
 // @Router /analyze/basic [post]
 func (a *AnalyzerController) AnalyzeWebsiteContent(c *gin.Context) {
 

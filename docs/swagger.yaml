@@ -2,7 +2,7 @@ definitions:
   entity.AppError:
     properties:
       code:
-        type: string
+        type: integer
       message:
         type: string
     type: object
@@ -75,10 +75,12 @@ info:
 paths:
   /analyze/basic:
     post:
-      description: Push a job to analyze basic information ona website
+      consumes:
+      - application/x-www-form-urlencoded
+      description: Push a job to analyze basic information on a website
       parameters:
       - description: Target URL for website content analysis
-        in: query
+        in: formData
         name: target_url
         required: true
         type: string
@@ -86,15 +88,15 @@ paths:
       - application/json
       responses:
         "200":
-          description: OK
+          description: Response containing the job ID
           schema:
             $ref: '#/definitions/response.AnalyzerResponse'
         "400":
-          description: Bad Request
+          description: Error response if target_url is missing
           schema:
             $ref: '#/definitions/response.ErrorResponse'
         "500":
-          description: Internal Server Error
+          description: Error response for internal server error
           schema:
             $ref: '#/definitions/response.ErrorResponse'
       summary: Analyze website content

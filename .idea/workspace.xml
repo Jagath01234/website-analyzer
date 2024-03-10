@@ -4,7 +4,40 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="affb8dd4-6e9c-4477-8ad1-8f9b4b7c4852" name="Changes" comment="" />
+    <list default="true" id="affb8dd4-6e9c-4477-8ad1-8f9b4b7c4852" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/docs.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/swagger.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/swagger.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/boot/boot.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/configuration/app_config.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/analyzer_controller.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/analyzer_controller_impl.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/analyzer_controller_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/constant.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/model.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/response/analyzer_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/response/error_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/metrics/metrics_collector.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/metrics/metrics_engine.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/analyzer_service.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/analyzer_service_impl.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/analyzer_service_mock.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/analyzer_service_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/transport/http/engine/router.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/transport/http/init.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/util/util.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/util/util_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/worker/analyzer worker_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/worker/analyzer_worker.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/worker/analyzer_worker_impl.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/worker/analyzer_worker_mock.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,6 +85,13 @@
     </key>
   </component>
   <component name="RunManager" selected="Go Test.go test website-analyzer">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration name="TestAnalyzeWebsiteContent in website-analyzer/src/service" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="website-analyzer" />
       <working_directory value="$PROJECT_DIR$/src/service" />
@@ -86,6 +126,14 @@
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
       <pattern value="^\QTestAnalyzeWebsiteThreadError\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
       <method v="2" />
     </configuration>
     <configuration name="go test website-analyzer" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
