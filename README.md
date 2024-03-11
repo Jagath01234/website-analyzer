@@ -25,7 +25,7 @@ A frontend client supporting the APIs of this service can be found in the  https
 ## Requirements
 - Go 1.21
 - Configured GOROOT and GOPATH.
-- Configured github token or made the GOPROXY to `direct` to pull the dependencies from github. (This is required since there are go dependencies which has version higher than `v1`.)
+- Configured github token or made the GOPROXY to `https://proxy.golang.org,direct` to pull the dependencies from github. (This is required since there are go dependencies which has version higher than `v1`.)
 
 ## Configuration
 - Edit the `config.json` file in the project root to change the configurations as required. 

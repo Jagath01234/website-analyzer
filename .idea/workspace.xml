@@ -5,6 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="affb8dd4-6e9c-4477-8ad1-8f9b4b7c4852" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -57,7 +60,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.go test website-analyzer">
+  <component name="RunManager" selected="Go Test.TestAnalyzeWebsiteContent in website-analyzer/src/service">
     <configuration name="TestAnalyzeWebsiteContent in website-analyzer/src/service" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="website-analyzer" />
       <working_directory value="$PROJECT_DIR$/src/service" />
@@ -115,13 +118,17 @@
       <framework value="gotest" />
       <method v="2" />
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestAnalyzeWebsiteContent in website-analyzer/src/service" />
+        <item itemvalue="Go Test.go test website-analyzer/src/service" />
         <item itemvalue="Go Test.go test website-analyzer" />
         <item itemvalue="Go Test.TestAnalyzeWebsiteThreadBreak in website-analyzer/src/worker" />
         <item itemvalue="Go Test.TestAnalyzeWebsiteThreadError in website-analyzer/src/worker" />
-        <item itemvalue="Go Test.TestAnalyzeWebsiteContent in website-analyzer/src/service" />
-        <item itemvalue="Go Test.go test website-analyzer/src/service" />
       </list>
     </recent_temporary>
   </component>
@@ -185,6 +192,10 @@
           <line>107</line>
           <option name="timeStamp" value="57" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/service/analyzer_service_test.go</url>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -197,12 +208,12 @@
     <SUITE FILE_PATH="coverage/website_analyzer$TestIsValidURL_in_website_analyzer_src_service.out" NAME="TestIsValidURL in website-analyzer/src/service Coverage Results" MODIFIED="1710051782974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/website_analyzer$TestIsValidURL_in_website_analyzer_src_util.out" NAME="TestIsValidURL in website-analyzer/src/util Coverage Results" MODIFIED="1710060853016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/website_analyzer$go_test_website_analyzer_src_util.out" NAME="go test website-analyzer/src/util Coverage Results" MODIFIED="1709971174841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/website_analyzer$go_test_website_analyzer_src_service.out" NAME="go test website-analyzer/src/service Coverage Results" MODIFIED="1710070390134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/website_analyzer$go_test_website_analyzer_src_service.out" NAME="go test website-analyzer/src/service Coverage Results" MODIFIED="1710170112438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/website_analyzer$TestGetAnalyzeJobStatusSuccessful_in_website_analyzer_src_controller.out" NAME="TestGetAnalyzeJobStatusSuccessful in website-analyzer/src/controller Coverage Results" MODIFIED="1710011265470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/website_analyzer$go_test_website_analyzer_src_controller.out" NAME="go test website-analyzer/src/controller Coverage Results" MODIFIED="1710057390181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/website_analyzer$TestAnalyzeWebsiteThreadBreak_in_website_analyzer_src_worker.out" NAME="TestAnalyzeWebsiteThreadBreak in website-analyzer/src/worker Coverage Results" MODIFIED="1710074024197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/website_analyzer$TestAnalyzeWebsiteContentError_in_website_analyzer_src_service.out" NAME="TestAnalyzeWebsiteContentError in website-analyzer/src/service Coverage Results" MODIFIED="1710061495769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/website_analyzer$TestAnalyzeWebsiteContent_in_website_analyzer_src_service.out" NAME="TestAnalyzeWebsiteContent in website-analyzer/src/service Coverage Results" MODIFIED="1710071873558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/website_analyzer$TestAnalyzeWebsiteContent_in_website_analyzer_src_service.out" NAME="TestAnalyzeWebsiteContent in website-analyzer/src/service Coverage Results" MODIFIED="1710170401501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/website_analyzer$TestSetupCollector_in_website_analyzer_src_service.out" NAME="TestSetupCollector in website-analyzer/src/service Coverage Results" MODIFIED="1710063433844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/website_analyzer$TestAnalyzeWebsiteContent_in_website_analyzer_src_controller.out" NAME="TestAnalyzeWebsiteContent in website-analyzer/src/controller Coverage Results" MODIFIED="1710058326298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/website_analyzer$TestIsInternalLink_in_website_analyzer_src_service.out" NAME="TestIsInternalLink in website-analyzer/src/service Coverage Results" MODIFIED="1710052015264" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
