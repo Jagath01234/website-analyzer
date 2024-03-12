@@ -62,6 +62,7 @@ Configurations are self-exnoplanatory.
 - Navigate to project root directory using terminal.
 - Download the dependencies with `go mod tidy`.
 - Run with `go run main go`.
+- Makefile and dockerfile are also added for the project to use with building and running. Can find the available the commands using `make help` command. 
 
 ## Usage
 - There are two endpoints in this service `/analyze/basic` and `/analyze/status`.
